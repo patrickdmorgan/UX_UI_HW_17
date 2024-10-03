@@ -1,9 +1,6 @@
-body {  
-    font-family: Arial, sans-serif;  
-    margin: 0;  
-    padding: 0;  
-    background-color: #f9f9f9;  
-    color: #333;  
+html, body {  
+    height: 100%; /* Full height for body */  
+    margin: 0; /* Remove default margin */  
 }  
 
 .navigation {  
@@ -11,7 +8,7 @@ body {
     justify-content: space-between;  
     align-items: center;  
     padding: 10px 20px;  
-    background-color: #373738; /* Optional: background color for navbar */  
+    background-color: #000000; 
 }  
 
 .inline-block {  
@@ -35,7 +32,7 @@ nav {
     width: 73%;  
     padding: 1%;  
 }  
-
+  
 nav ul {  
     width: 50%;  
     margin-left: auto; /* Center the ul */  
@@ -43,22 +40,32 @@ nav ul {
 }  
 
 nav ul li {  
-    list-style: none; /* Remove bullet points */  
-    padding: 0 15px; /* Space between items */  
+    font-family: Arial, Helvetica, sans-serif;
+    width: 10%;
+    text-align: center;
+    padding: 0 30px; /* Space between items */  
     color: white; /* Text color for navbar items */  
 }  
+
+nav ul li:hover{
+    transition-duration: 0.2s;
+    border: 2px solid #80bbff;
+    border-radius: 8px;
+    cursor: pointer;
+
+  }
+
 
 .heroImg {  
     height: 600px;  
     padding: 25px;  
-    background: url('your-hero-image.jpg') no-repeat center center; /* Add your hero image */  
-    background-size: cover; /* Cover full height */  
     display: flex;  
     align-items: center;  
     justify-content: center;  
 }  
 
 .content {  
+    font-family: Arial, Helvetica, sans-serif;
     width: 500px;  
     text-align: center; /* Center content text */  
     background-color: rgba(255, 255, 255, 0.8); /* Optional: Semi-transparent background for content */  
@@ -67,15 +74,14 @@ nav ul li {
 }  
 
 .profile-img {  
-    max-width: 100%;  
+    max-width: 40%;  
     height: auto;  
     border-radius: 50%; /* Make the profile image circular */  
 }  
 
 footer {  
-    background-color: #373738;  
-    padding: 15px 0;  
-    text-align: center; /* Center footer content */  
+    padding: 100px 0;  
+    text-align: center; /* Center footer content */ 
 }  
 
 footer ul {  
@@ -84,15 +90,16 @@ footer ul {
 }  
 
 footer ul li {  
+    font-family: Arial, Helvetica, sans-serif;
     list-style: none;  
     display: inline-block; /* Inline items in footer */  
     padding: 0 15px; /* Space between items */  
-    color: white; /* Text color for footer items */  
+    color: rgb(0, 0, 0); /* Text color for footer items */  
 }  
 
-/* Additional styles for buttons */  
+
 button {  
-    background-color: #4CAF50; /* Button color */  
+    background-color: #80bbff; /* Button color */  
     color: white; /* Button text color */  
     border: none;  
     padding: 10px 20px;  
@@ -102,7 +109,7 @@ button {
 }  
 
 button:hover {  
-    background-color: #45a049; /* Darker green on hover */  
+    background-color: #1c4ff7;  
 }  
 
 /* Responsive Styles */  
